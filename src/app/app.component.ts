@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
+
+@NgModule({
+    
+    })
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-nn',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  
+  pageTitle = 'Notify News';
 }

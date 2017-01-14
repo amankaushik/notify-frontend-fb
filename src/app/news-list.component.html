@@ -1,0 +1,38 @@
+<!--<div *ngIf=not isNull(newsService.displayNews)>-->
+    <div *ngFor='let item of newsService.displayNews; let i=index'>
+        <!--email-item-selected-->
+        <div class="email-item pure-table-striped  pure-g">
+            <div class="pure-u-3-4 ">
+                <h5 class="email-name">{{i + 1}}</h5>
+                <h4 class="email-subject"><a href={{item.itemUrl}} target="_blank">{{item.itemTitle}}</a></h4>
+                <h6 class="email-name">{{item.itemScore}} Points {{item.itemTime}} hour(s) ago</h6>
+                <!--<p class="email-desc">
+                </p>-->
+            </div>
+        </div>
+    </div>
+<!--</div>-->
+<!--<div class="content">
+    <div class="content-subhead">
+      <button type="submit" class="button-success pure-button"
+      (click)="onClickGetNew('https://boiling-mesa-79238.herokuapp.com/api/notify/getall/?format=json')">Get All</button>
+    </div>
+    <div class="content-subhead">
+    <table class="pure-table pure-table-striped pure-table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor='let item of newsService.newNews; let i = index;
+            let isOdd = odd; let isEven = even'>
+                  <td>{{i + 1}}</td>
+                  <td><a href={{item.itemUrl}}>{{item.itemTitle}}</a></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>-->

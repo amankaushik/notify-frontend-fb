@@ -1,3 +1,56 @@
-<h1>
-  {{title}}
-</h1>
+<div id="layout" class="content pure-g">
+    <div id="nav" class="pure-u">
+        <a href="#" class="nav-menu-button">Menu</a>
+
+        <div class="nav-inner">
+            <!--<button class="primary-button pure-button">Compose</button>-->
+
+            <div class="pure-menu">
+                <app-news-data></app-news-data>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="list" class="pure-u-1">
+        <app-news-list></app-news-list>
+        <!--(email-item-unread) ?-->
+        <!--<div class="pure-u">
+            <img class="email-avatar" alt="Tilo Mitra&#x27;s avatar" height="64" width="64" src="img/common/tilo-avatar.png">
+        </div>-->
+        <!--<div class="pure-u-3-4">
+            <h5 class="email-name">Tilo Mitra</h5>
+            <h4 class="email-subject">Hello from Toronto</h4>
+            <p class="email-desc">
+                Hey, I just wanted to check in with you from Toronto. I got here earlier today.
+            </p>
+
+        </div>-->
+    </div>
+    <div id="main" class="pure-u-1">
+        <div class="email-content">
+            <div class="email-content-header pure-g">
+                <div class="pure-u-1-2">
+                    <h1 class="email-content-title">News Notify</h1>
+                    <!--<p class="email-content-subtitle">
+                        From <a>Tilo Mitra</a> at <span>3:56pm, April 3, 2012</span>
+                    </p>-->
+                </div>
+
+                <!--<div class="email-content-controls pure-u-1-2">
+                    <button class="secondary-button pure-button">Reply</button>
+                    <button class="secondary-button pure-button">Forward</button>
+                    <button class="secondary-button pure-button">Move to</button>
+                </div>-->
+            </div>
+
+            <div class="email-content-body">
+                <p>
+                    News Notify provides new additions to the HackerNews
+                    top news items, every half hour. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
